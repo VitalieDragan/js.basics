@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-        <title>To do App</title>
-    </head>
-    <body>
-        <header>
-            <h1>Task Management</h1>
-        </header>
-        <form>
-            <input type="text" placeholder= "Title..." class="todo-input" >
-            <button class="todo-button" type="submit">Add</button>
-        </form>
+<html>
+  <head>
+    <title>Js Assignment</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-        <div class="todo-list">
-            <ul class="todoli-container">
-                
-            </ul>
+  </head>
+
+  <body>
+    <section class="main-container">
+      
+        <h1>Task Manager</h1>
+
+        <!-- input container -->
+        <div class="input-container">
+          <input type="text" placeholder="Type your to do.." class="todo-input">
+          <button type="button" class="todo-button">+</button>
+        </div>
+        <p class="error-message">should not be empty !</p>
+      
+
+      <form>
+
+        <!--li container -->
+        <div class="todo-container">
+          <ul class="todo-list">
+            <li></li>
+          </ul>
         </div>
 
-        <div class="removeAll">
-            <button class= "remove-button" >Remove All</button>
+        <!-- remove all button -->
+        <div class="remove-all-container">
+          <button class="remove-all">Remove All</button>
         </div>
+      </form>
+      
 
+    </section>
 
-        <script src="home.js"></script>
-    </body>
+    <script src="src/index.js"></script>
+  </body>
 </html>
